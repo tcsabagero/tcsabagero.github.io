@@ -11,6 +11,69 @@ body{
     font-family: Helvetica,Arial,sans-serif;
     font-size: 14px;
 }
+/*Nav*/
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: fantasy;
+}
+.sticky{
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+
+.main-nav{
+    display: flex;
+    list-style: none;
+    font-size: 0.7em;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px){
+    .main-nav {
+        font-size: 0.5em;
+        padding-bottom: 5%;
+    }
+}
+.blue{
+    background: #7abcff; /* Old browsers */
+    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
+    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+}
+
+.zone {
+
+    cursor:pointer;
+    display:inline-block;
+    color:#FFF;
+    font-size:2em;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.push{
+    margin-left:auto;
+    padding: 20px;
+}
+
+.navi{
+    padding: 20px;
+}
+
+/*End of Nav*/
 
 .logo{
 
@@ -69,7 +132,7 @@ h2{
 .exps{
     text-align: justify;
     list-style-type: square;
-    background: #9DCC8B;
+    background: #D5C7DE;
     padding: 5px 5px 5px 5px;
     width: 100%;
 
