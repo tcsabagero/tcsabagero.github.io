@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <title>Geros Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeroSPage</title>
 </head>
 <body>
-
   <nav class="zone blue sticky">
 	  <ul class="main-nav">
-	  	<li class="navi"><a href="">About</li>
-	  	<li class="navi"><a href="">Experience</li>
-      <li class="navi"><a href="">Education</li>
-      <li class="navi"><a href="">Projects</li>
-      <li class="push"><a href="">Contact</li>
+	  	<li class="navi"><a href="#about">About</li>
+	  	<li class="navi"><a href="#experience">Experience</li>
+      <li class="navi"><a href="#education">Education</li>
+      <li class="navi"><a href="#projects">Projects</li>
+      <li class="push"><a href="#contact">Contact</li>
 	  </ul>
-	 </nav>
+   </nav>
     <main class="wrap">
         <h1 class="welcome">Welcome to my site!</h1>
         <img class="logo" src="img/logo.png">
@@ -33,7 +32,8 @@
     <div class="container">
         <div class="row">  
              <div class="card">
-                 <h1>About me</h1>
+                 <h1 id="about">About me</h1>
+                 <div class="wrapper"></div>
                  <img class="gero-img" src="img/gero.jpg">
                   <div class="exps-about">
                     <li class="li-about">Having a degree from engineering, economics and IT fields, I have spent my past 5 years working in different areas as an IT specialist.</li>
@@ -51,7 +51,7 @@
      <div class="container">
         <div class="row">
              <div class="card">
-                 <h1>Experience</h1>
+                 <h1 id="experience">Experience</h1>
                  <h2>Web Developer (Freelance) </h2>
                  <div class="exps">
                    <li>Design and build websites to the client’s specifications</li>
@@ -84,13 +84,13 @@
       <div class="container">
         <div class="row">
              <div class="card">
-                 <h1>Educational Background</h1>
+                 <h1 id="education">Educational Background</h1>
                    <h2>John von Neumann University</h2>
                    <p class="edu">Computer Science, Postgraduate</p>
-                   <p class="edu">Computer programming</p><br><hr>
+                   <p class="edu">Major: Computer programming</p><br><hr>
                    <h2>Szent István University</h2>
                    <p class="edu">Economist in Management and Leadership MSc</p>
-                   <p class="edu">Major: Human Resource and organizational development</p><br><hr>
+                   <p class="edu">Major: Human Resource Management</p><br><hr>
                    <h2>University of Szeged</h2>
                    <p class="edu">Business and Rural Development Engineer BSc</p>
                    <p class="edu">Major: Management and business administration</p>
@@ -100,15 +100,18 @@
       <div class="container">
         <div class="row">
              <div class="card">
-                 <h1>Projects</h1>
-                   <p>Having a degree from engineering, economics and IT fields, I have spent my past 5 years working in sales, data management and organizational health area as a data manager. </p>
-                 </div>
+                 <h1 id="projects">Projects</h1>
+                 <div class="wrapper"></div>
+                  <div class="box"><h2>Web Development</h2><img class="webdev-img" width="250px" height="300px" src="img/webdev.jpg"></div>
+                  <div class="box"><h2>Data Management</h2><img class="datamen-img" width="250px" height="300px" src="img/datamen.jpg"></div>
+                  <div class="box"><h2>Career Consulting</h2><img class="career-img" width="250px" height="300px" src="img/career.jpg"></div>              
+                </div>
                </div>
              </div>
       <div class="container">
         <div class="row">
             <div class="card">
-                 <h1>Contact</h1>
+                 <h1 id="contact">Contact</h1>
                  <form action="" class="emailcontent">
                     <div class="email">
                       <input type="email" class="form-control" id="email" placeholder="Email">
@@ -127,4 +130,6 @@
                </div>
              </div>
 </body>
+<footer>The website is created by Gero<br><hr><a href="https://www.linkedin.com/in/csaba-g%C3%A9r%C3%B3-3196a1111/" target="_blank" rel="noopener noreferrer"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg></a>
+  </footer>
 </html>
