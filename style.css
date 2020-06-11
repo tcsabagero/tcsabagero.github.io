@@ -31,20 +31,14 @@ a{
     margin: 0;
 }
 
-@media only screen and (max-width: 600px){
-    .main-nav {
-        font-size: 0.5em;
-        padding-bottom: 5%;
-    }
-}
 .blue{
-    background: #7abcff; /* Old browsers */
-    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
-    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+    background: #B38686; /* Old browsers */
+    background: -moz-linear-gradient(top, #B38686 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#B38686), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #B38686 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #B38686 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #B38686 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
+    background: linear-gradient(top, #B38686 0%,#60abf8 44%,#4096ee 100%); /* W3C */
 }
 
 .zone {
@@ -70,7 +64,20 @@ a{
 }
 
 .navi{
-    padding: 20px;
+    padding:  20px;
+}
+ul{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+@media only screen and (max-width: 600px){
+    .main-nav {
+        font-size: 0.5em;
+        padding: 0;
+    }
 }
 
 /*End of Nav*/
@@ -80,16 +87,16 @@ a{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: -5%;
+    margin-bottom: 0%;
     max-width: 50%;
 }
 .gero-img{
 
-    max-width: 25%;
+    max-width: 15%;
     display: block;
     height: auto;
-    padding-bottom: 5%;
-    padding-right: 10%;
+    padding-bottom: 0%;
+    padding-right: 5%;
     float: left;
 }
 .container {
@@ -128,18 +135,30 @@ h2{
     text-align: left;
     font-size: small;
     line-height: 1.58;
+    background: #DCD2D2;
+
+}
+
+.edu{
+    line-height: 65%;
+    text-indent: 5%;
 }
 .exps{
     text-align: justify;
-    list-style-type: square;
-    background: #D5C7DE;
+    text-indent: 5%;
     padding: 5px 5px 5px 5px;
     width: 100%;
+    list-style: none;
 
 }
+.exps-about{
+    text-align: justify;
+    width: 100%;
+    padding-top: 3%;
+    line-height: 180%;
+    list-style: none;
 
-
-
+}
 
 .email{
     width: 90%;
